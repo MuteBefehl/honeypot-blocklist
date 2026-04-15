@@ -1,13 +1,13 @@
 # Honeypot Blocklist
 
-Public threat-intel list derived from an ICS/SCADA-themed honeypot exposed on the open internet. Every listed IP has interacted with the honeypot unsolicited and does not belong to any research scanner I could identify (Shodan, Censys, Shadowserver, BinaryEdge, Onyphe and others are filtered out).
+Public threat-intel list derived from an ICS/SCADA-themed honeypot exposed on the open internet and from fail2ban bans on a separate production server. Every listed IP has interacted unsolicited or triggered an automated ban, and does not belong to any research scanner I could identify (Shodan, Censys, Shadowserver, BinaryEdge, Onyphe and others are filtered out).
 
 The lists use the de-facto standard format: **one IP per line** with `#`-prefixed header comments. Compatible with `ipset`, `iptables`, `nftables`, `fail2ban`, Cloudflare IP Access Rules, pfSense/OPNsense URL tables, nginx, Caddy and anything that speaks FireHOL/Spamhaus-style plain text.
 
 ## Lists
 
 ### [`high.txt`](high.txt)
-IPs that actively tried to compromise or manipulate the honeypot. Examples: successful or repeated SSH brute-force (≥20 attempts), VNC authentication attempts, HMI admin login attempts, control-plane interactions like setpoint changes or alarm acknowledgements, active Modbus/S7 function calls, CVE probes against environment and backup endpoints. **High confidence** that the activity is malicious.
+IPs that actively tried to compromise or manipulate the honeypot, plus IPs banned by fail2ban on a separate production server and already reported to AbuseIPDB. Examples: successful or repeated SSH brute-force (≥20 attempts), VNC authentication attempts, HMI admin login attempts, control-plane interactions like setpoint changes or alarm acknowledgements, active Modbus/S7 function calls, CVE probes against environment and backup endpoints. **High confidence** that the activity is malicious.
 
 ### [`medium.txt`](medium.txt)
 IPs that only scanned, probed or anonymously loaded pages. TCP handshakes on Modbus/S7/VNC with no further interaction, `GET` requests to the login page, passive reconnaissance. **Medium confidence** - could be research or opportunistic scanning. Use with care.
