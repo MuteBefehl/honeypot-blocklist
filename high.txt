@@ -5,8 +5,8 @@
 # Sources: ICS/SCADA honeypot events + fail2ban reports to AbuseIPDB
 # Known research scanners (Shodan, Censys, Shadowserver, BinaryEdge etc.) filtered out.
 #
-# Updated: 2026-04-17 UTC
-# Entries:         3520
+# Updated: 2026-04-18 UTC
+# Entries:         3521
 # Source:  https://github.com/MuteBefehl/honeypot-blocklist
 # License: CC0 / Public Domain
 #
@@ -1316,6 +1316,7 @@
 162.240.54.168
 162.243.42.122
 162.55.94.103
+163.172.143.147
 163.227.230.54
 163.5.214.40
 163.53.168.23
