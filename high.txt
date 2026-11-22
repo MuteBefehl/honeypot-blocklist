@@ -1,7 +1,7 @@
 # Argus / honeypot-blocklist — HIGH confidence threat IPs
-# Last updated: 2026-08-02
+# Last updated: 2026-11-22
 # Source: honeypot.mutebefehl.de (DB events ≥50 ssh_failed / cve probes / HMI logins / control attempts / many login views) + fail2ban srv01 (sshd, sshd-aggressive, recidive)
-# Total: 8964 IPs
+# Total: 8966 IPs
 # License: CC0
 
 1.1.44.101
@@ -3558,12 +3558,14 @@
 91.19.6.38
 91.40.145.149
 91.80.129.69
+91.92.40.4
 91.92.40.5
 91.92.40.6
 91.92.40.7
 91.92.40.8
 91.92.40.10
 91.92.40.11
+91.92.40.12
 91.92.40.13
 91.92.40.19
 91.92.40.23

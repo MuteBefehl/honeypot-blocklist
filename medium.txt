@@ -1,7 +1,7 @@
 # Argus / honeypot-blocklist — MEDIUM confidence threat IPs
-# Last updated: 2026-08-02
+# Last updated: 2026-11-22
 # Source: honeypot.mutebefehl.de (credential attempts, VNC/Modbus/S7 probes without success)
-# Total: 5844 IPs
+# Total: 5843 IPs
 # License: CC0
 
 1.15.103.109
@@ -2349,7 +2349,6 @@
 90.230.115.5
 90.230.226.175
 90.231.51.54
-91.92.40.4
 91.92.40.90
 91.92.43.109
 91.99.101.160
